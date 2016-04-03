@@ -66,7 +66,7 @@ How to use the application
 
 The application can be accessed unter the following URL: <http://localhost:8080/example-jee-user-registration-web>.
 
-1. Enter data into _First name_(2-50 characters), _Last name_(2-50 characters), _Email address_, _Password_, _At least one phone nubmer_ and click the _Register_ button. Both name fields and the password must have lower and upper case letters. Additionally the password must have at least one special character @#$%!&. 
+1. Enter data into _First name_(2-50 characters), _Last name_(2-50 characters), _Email address_, _Password_, _At least one phone number_ and click the _Register_ button. Both name fields and the password must have lower and upper case letters. Additionally the password must have at least one special character @#$%!&. 
 2. If the data entered is valid, the new member will be registered and added to the _Members_ display list.
 3. If the data is not valid, you must fix the validation errors and can try to add the member again.
 4. When the registration is successful, the new member will receive an email.
