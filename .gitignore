@@ -1,0 +1,7 @@
+*.classpath
+*.project
+target
+/example-jee-user-registration-web/target
+/example-jee-user-registration-web/bin
+/example-jee-user-registration-ear/target
+/example-jee-user-registration-ejb/target
