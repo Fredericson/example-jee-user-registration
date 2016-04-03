@@ -38,7 +38,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Arquillian.class)
 public class MailTest {
-    @Deployment
+    private static final String INSERT_HERE_YOUR_EMAIL_ADDRESS = "anymailAddress@gmail.com";
+
+	@Deployment
     public static Archive<?> createTestArchive() {
         return ShrinkWrap.create(WebArchive.class, "test.war")
                 .addClasses(Member.class, Mail.class, MemberRegistration.class, MemberRegisteredEvent.class, Resources.class)
@@ -56,7 +58,7 @@ public class MailTest {
     
     @Test
     public void testRegister() throws Exception {
-        Member newMember = createNewMember("fse@zuehlke.com");
+        Member newMember = createNewMember(INSERT_HERE_YOUR_EMAIL_ADDRESS);
         memberRegistration.register(newMember);
         assertNotNull(newMember.getId());
         log.info("email was sent to emailaddress" + newMember.getEmail() + "for User(id=" + newMember.getId() + ") " + newMember.getFirstName() + " " + newMember.getLastName() + " received a validation email at address: " + newMember.getEmail());
